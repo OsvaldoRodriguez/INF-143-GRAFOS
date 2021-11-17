@@ -6,7 +6,7 @@ const int N = 1e5 + 5;
 typedef pair<int, int> ii;
 vector<ii> G[N];
 int dis[N];
-void dijkstra(int node){
+void dijkstra(int node){ // O (m log n)
 
     dis[node] = 0;
     priority_queue<ii, vector<ii>, greater<ii>> q;
